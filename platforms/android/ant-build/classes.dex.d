@@ -1,0 +1,21 @@
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes.dex : \
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\antxman\estimotebeacons\EstimoteBeacons$1.class \
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\antxman\estimotebeacons\EstimoteBeacons$2.class \
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\antxman\estimotebeacons\EstimoteBeacons$3.class \
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\antxman\estimotebeacons\EstimoteBeacons$4.class \
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\antxman\estimotebeacons\EstimoteBeacons$5.class \
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\antxman\estimotebeacons\EstimoteBeacons.class \
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\showingcloud\localnotify\BuildConfig.class \
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\showingcloud\localnotify\LocalNotify.class \
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\showingcloud\localnotify\R$attr.class \
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\showingcloud\localnotify\R$drawable.class \
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\showingcloud\localnotify\R$string.class \
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\showingcloud\localnotify\R$xml.class \
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\showingcloud\localnotify\R.class \
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\showingcloud\mynotification\MyNotification.class \
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\showingcloud\mynotification\MyNotificationAdidas.class \
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\showingcloud\mynotification\MyNotificationNike.class \
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes\org\apache\cordova\device\Device.class \
+E:\PhoneGap\localNotify\platforms\android\ant-build\dexedLibs\classes-b9a71a43b41fadf6bd2c78ac39dd43d1.jar \
+E:\PhoneGap\localNotify\platforms\android\ant-build\dexedLibs\guava-15.0-1b67a8410f1b3aa4d9c071c836066504.jar \
+E:\PhoneGap\localNotify\platforms\android\ant-build\dexedLibs\estimote-sdk-preview-789cf0697f7bde77d341ef4a31bc9112.jar \

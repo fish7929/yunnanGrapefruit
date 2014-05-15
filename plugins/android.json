@@ -1,0 +1,73 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"EstimoteBeacons\"><param name=\"android-package\" value=\"com.antxman.estimotebeacons.EstimoteBeacons\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<uses-feature android:name=\"android.hardware.bluetooth_le\" android:required=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<service android:exported=\"false\" android:name=\"com.estimote.sdk.service.BeaconService\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:name=\"com.showingcloud.mynotification.MyNotification\" android:theme=\"@android:style/Theme.Black.NoTitleBar\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:name=\"com.showingcloud.mynotification.MyNotificationNike\" android:theme=\"@android:style/Theme.Black.NoTitleBar\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:name=\"com.showingcloud.mynotification.MyNotificationAdidas\" android:theme=\"@android:style/Theme.Black.NoTitleBar\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.antxman.estimotebeacons": {
+            "PACKAGE_NAME": "com.showingcloud.localnotify"
+        },
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "com.showingcloud.localnotify"
+        }
+    },
+    "dependent_plugins": {}
+}

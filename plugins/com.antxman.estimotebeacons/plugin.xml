@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.antxman.estimotebeacons" version="0.9">
+    <name>EstimoteBeacons</name>
+    <description>EstimoteBeacons</description>
+    <license>Apache 2.0</license>
+
+    <js-module src="www/EstimoteBeacons.js" name="EstimoteBeacons">
+        <clobbers target="EstimoteBeacons" />
+    </js-module>
+    <!-- android -->
+    <platform name="android">
+		<source-file src="libs/MyNotification.java" target-dir="src/com/showingcloud/mynotification" />
+		<source-file src="libs/MyNotificationNike.java" target-dir="src/com/showingcloud/mynotification" />
+		<source-file src="libs/MyNotificationAdidas.java" target-dir="src/com/showingcloud/mynotification" />
+		<source-file src="src/android/EstimoteBeacons.java" target-dir="src/com/antxman/estimotebeacons" />
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="EstimoteBeacons">
+                <param name="android-package" value="com.antxman.estimotebeacons.EstimoteBeacons" />
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+            <uses-permission android:name="android.permission.BLUETOOTH" />
+            <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <service android:exported="false" android:name="com.estimote.sdk.service.BeaconService"/>
+        </config-file>
+		<config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <!-- Required SDK核心功能-->
+            <activity
+				android:name="com.showingcloud.mynotification.MyNotification"
+				android:theme="@android:style/Theme.Black.NoTitleBar"
+				/>
+		</config-file>
+		<config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <!-- Required SDK核心功能-->
+            <activity
+				android:name="com.showingcloud.mynotification.MyNotificationNike"
+				android:theme="@android:style/Theme.Black.NoTitleBar"
+				/>
+		</config-file>
+		<config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <!-- Required SDK核心功能-->
+            <activity
+				android:name="com.showingcloud.mynotification.MyNotificationAdidas"
+				android:theme="@android:style/Theme.Black.NoTitleBar"
+				/>
+		</config-file>
+        <source-file src="libs/estimote-sdk-preview.jar" target-dir="libs" />
+        <source-file src="libs/guava-15.0.jar" target-dir="libs" />
+        <source-file src="libs/beacon_gray.png" target-dir="res/drawable-xhdpi" />
+    </platform>
+	<!-- ios -->
+	<platform name="ios">
+		<framework src="CoreBluetooth.framework" />
+		<framework src="CoreLocation.framework" />
+		<framework src="SystemConfiguration.framework" />
+		<source-file src="src/ios/libEstimoteSDK.a" framework="true" />
+		<header-file src="src/ios/ESTBeacon.h" />
+		<header-file src="src/ios/ESTBeaconDefinitions.h" />
+		<header-file src="src/ios/ESTBeaconManager.h" />
+		<header-file src="src/ios/ESTBeaconRegion.h" />
+		<header-file src="src/ios/ESTBeaconUpdateInfo.h" />
+		<header-file src="src/ios/EstimoteBeacons.h" />
+		<source-file src="src/ios/EstimoteBeacons.m" />
+
+		<config-file target="config.xml" parent="/*">
+			<feature name="EstimoteBeacons">
+				<param name="ios-package" value="EstimoteBeacons" />
+			</feature>
+		</config-file>
+	</platform>
+</plugin>

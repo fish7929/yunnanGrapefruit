@@ -50,6 +50,8 @@ E:\PhoneGap\localNotify\platforms\android\assets\www\img\2.jpg \
 E:\PhoneGap\localNotify\platforms\android\assets\www\img\3.jpg \
 E:\PhoneGap\localNotify\platforms\android\assets\www\img\adidas.jpg \
 E:\PhoneGap\localNotify\platforms\android\assets\www\img\beacon_gray.png \
+E:\PhoneGap\localNotify\platforms\android\assets\www\img\demo.jpg \
+E:\PhoneGap\localNotify\platforms\android\assets\www\img\demo1.png \
 E:\PhoneGap\localNotify\platforms\android\assets\www\img\goodby.jpg \
 E:\PhoneGap\localNotify\platforms\android\assets\www\img\logo.png \
 E:\PhoneGap\localNotify\platforms\android\assets\www\img\nike.jpg \

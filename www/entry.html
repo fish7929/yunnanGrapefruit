@@ -6,8 +6,10 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <!--基本要导入的样式-->
+        <!--
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        -->
+		<!--基本要导入的样式-->
 		<link rel="stylesheet" type="text/css" href="css/icons.css" />
         <link rel="stylesheet" type="text/css" href="css/main.css" />
         <link rel="stylesheet" type="text/css" href="css/appframework.css" />
@@ -29,6 +31,7 @@
 		<link rel="stylesheet" type="text/css" href="plugins/css/af.popup.css"  />
 		<link rel="stylesheet" type="text/css" href="plugins/css/af.scroller.css"  />
 		<link rel="stylesheet" type="text/css" href="plugins/css/af.selectBox.css"  /> 
+		<link rel="stylesheet" type="text/css" href="css/index.css"  /> 
 		<style type="text/css">
 			/**表示通配符，设置文本颜色*/
 			*{
@@ -80,8 +83,14 @@
 	<body>
         <div id="afui" class="ios7">
 			<div id="content">
-				<div id="notification" class="panel" selected="true" >
-					<img border="0" src="img/welcome0.png" title="Orange star" align="center" width="360"/>
+				<div id="notification" class="panel" selected="true"  >
+					<div class="showDiv">
+						<img src="./img/welcome0.png" />
+						<p id="coupon"></p>
+						<div class="showDate">
+							<p id="activeDate"></p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

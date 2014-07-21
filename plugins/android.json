@@ -49,11 +49,31 @@
                             "count": 1
                         },
                         {
-                            "xml": "<activity android:name=\"com.showingcloud.mynotification.MyNotificationNike\" android:theme=\"@android:style/Theme.Black.NoTitleBar\" />",
+                            "xml": "<activity android:name=\"com.showingcloud.mynotification.MyNotificationMinor2\" android:theme=\"@android:style/Theme.Black.NoTitleBar\" />",
                             "count": 1
                         },
                         {
-                            "xml": "<activity android:name=\"com.showingcloud.mynotification.MyNotificationAdidas\" android:theme=\"@android:style/Theme.Black.NoTitleBar\" />",
+                            "xml": "<activity android:name=\"com.showingcloud.mynotification.MyNotificationMinor3\" android:theme=\"@android:style/Theme.Black.NoTitleBar\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:name=\"com.showingcloud.mynotification.MyNotificationMinor4\" android:theme=\"@android:style/Theme.Black.NoTitleBar\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:name=\"com.showingcloud.mynotification.MyNotificationMinor5\" android:theme=\"@android:style/Theme.Black.NoTitleBar\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:name=\"com.showingcloud.mynotification.MyNotificationMinor6\" android:theme=\"@android:style/Theme.Black.NoTitleBar\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:name=\"com.showingcloud.mynotification.MyNotificationMinor27\" android:theme=\"@android:style/Theme.Black.NoTitleBar\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:name=\"com.showingcloud.mynotification.MyNotificationMinor1\" android:theme=\"@android:style/Theme.Black.NoTitleBar\" />",
                             "count": 1
                         }
                     ]

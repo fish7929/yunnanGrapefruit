@@ -13,8 +13,13 @@ E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\showingcloud\loc
 E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\showingcloud\localnotify\R$xml.class \
 E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\showingcloud\localnotify\R.class \
 E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\showingcloud\mynotification\MyNotification.class \
-E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\showingcloud\mynotification\MyNotificationAdidas.class \
-E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\showingcloud\mynotification\MyNotificationNike.class \
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\showingcloud\mynotification\MyNotificationMinor1.class \
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\showingcloud\mynotification\MyNotificationMinor2.class \
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\showingcloud\mynotification\MyNotificationMinor27.class \
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\showingcloud\mynotification\MyNotificationMinor3.class \
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\showingcloud\mynotification\MyNotificationMinor4.class \
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\showingcloud\mynotification\MyNotificationMinor5.class \
+E:\PhoneGap\localNotify\platforms\android\ant-build\classes\com\showingcloud\mynotification\MyNotificationMinor6.class \
 E:\PhoneGap\localNotify\platforms\android\ant-build\classes\org\apache\cordova\device\Device.class \
 E:\PhoneGap\localNotify\platforms\android\ant-build\dexedLibs\classes-b9a71a43b41fadf6bd2c78ac39dd43d1.jar \
 E:\PhoneGap\localNotify\platforms\android\ant-build\dexedLibs\guava-15.0-1b67a8410f1b3aa4d9c071c836066504.jar \

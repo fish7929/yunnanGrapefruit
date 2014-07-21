@@ -12,8 +12,13 @@
     <!-- android -->
     <platform name="android">
 		<source-file src="libs/MyNotification.java" target-dir="src/com/showingcloud/mynotification" />
-		<source-file src="libs/MyNotificationNike.java" target-dir="src/com/showingcloud/mynotification" />
-		<source-file src="libs/MyNotificationAdidas.java" target-dir="src/com/showingcloud/mynotification" />
+		<source-file src="libs/MyNotificationMinor2.java" target-dir="src/com/showingcloud/mynotification" />
+		<source-file src="libs/MyNotificationMinor3.java" target-dir="src/com/showingcloud/mynotification" />
+		<source-file src="libs/MyNotificationMinor4.java" target-dir="src/com/showingcloud/mynotification" />
+		<source-file src="libs/MyNotificationMinor5.java" target-dir="src/com/showingcloud/mynotification" />
+		<source-file src="libs/MyNotificationMinor6.java" target-dir="src/com/showingcloud/mynotification" />
+		<source-file src="libs/MyNotificationMinor27.java" target-dir="src/com/showingcloud/mynotification" />
+		<source-file src="libs/MyNotificationMinor1.java" target-dir="src/com/showingcloud/mynotification" />
 		<source-file src="src/android/EstimoteBeacons.java" target-dir="src/com/antxman/estimotebeacons" />
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="EstimoteBeacons">
@@ -38,14 +43,49 @@
 		<config-file target="AndroidManifest.xml" parent="/manifest/application">
             <!-- Required SDK核心功能-->
             <activity
-				android:name="com.showingcloud.mynotification.MyNotificationNike"
+				android:name="com.showingcloud.mynotification.MyNotificationMinor2"
 				android:theme="@android:style/Theme.Black.NoTitleBar"
 				/>
 		</config-file>
 		<config-file target="AndroidManifest.xml" parent="/manifest/application">
             <!-- Required SDK核心功能-->
             <activity
-				android:name="com.showingcloud.mynotification.MyNotificationAdidas"
+				android:name="com.showingcloud.mynotification.MyNotificationMinor3"
+				android:theme="@android:style/Theme.Black.NoTitleBar"
+				/>
+		</config-file>
+		<config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <!-- Required SDK核心功能-->
+            <activity
+				android:name="com.showingcloud.mynotification.MyNotificationMinor4"
+				android:theme="@android:style/Theme.Black.NoTitleBar"
+				/>
+		</config-file>
+		<config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <!-- Required SDK核心功能-->
+            <activity
+				android:name="com.showingcloud.mynotification.MyNotificationMinor5"
+				android:theme="@android:style/Theme.Black.NoTitleBar"
+				/>
+		</config-file>
+		<config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <!-- Required SDK核心功能-->
+            <activity
+				android:name="com.showingcloud.mynotification.MyNotificationMinor6"
+				android:theme="@android:style/Theme.Black.NoTitleBar"
+				/>
+		</config-file>
+		<config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <!-- Required SDK核心功能-->
+            <activity
+				android:name="com.showingcloud.mynotification.MyNotificationMinor27"
+				android:theme="@android:style/Theme.Black.NoTitleBar"
+				/>
+		</config-file>
+		<config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <!-- Required SDK核心功能-->
+            <activity
+				android:name="com.showingcloud.mynotification.MyNotificationMinor1"
 				android:theme="@android:style/Theme.Black.NoTitleBar"
 				/>
 		</config-file>

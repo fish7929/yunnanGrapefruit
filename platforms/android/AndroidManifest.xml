@@ -11,8 +11,13 @@
         </activity>
         <service android:exported="false" android:name="com.estimote.sdk.service.BeaconService" />
         <activity android:name="com.showingcloud.mynotification.MyNotification" android:theme="@android:style/Theme.Black.NoTitleBar" />
-        <activity android:name="com.showingcloud.mynotification.MyNotificationNike" android:theme="@android:style/Theme.Black.NoTitleBar" />
-        <activity android:name="com.showingcloud.mynotification.MyNotificationAdidas" android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity android:name="com.showingcloud.mynotification.MyNotificationMinor2" android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity android:name="com.showingcloud.mynotification.MyNotificationMinor3" android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity android:name="com.showingcloud.mynotification.MyNotificationMinor4" android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity android:name="com.showingcloud.mynotification.MyNotificationMinor5" android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity android:name="com.showingcloud.mynotification.MyNotificationMinor6" android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity android:name="com.showingcloud.mynotification.MyNotificationMinor27" android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity android:name="com.showingcloud.mynotification.MyNotificationMinor1" android:theme="@android:style/Theme.Black.NoTitleBar" />
     </application>
     <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="19" />
     <uses-feature android:name="android.hardware.bluetooth_le" android:required="true" />

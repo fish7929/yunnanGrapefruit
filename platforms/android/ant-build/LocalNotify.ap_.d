@@ -52,11 +52,9 @@ E:\PhoneGap\localNotify\platforms\android\assets\www\css\tizen.css \
 E:\PhoneGap\localNotify\platforms\android\assets\www\css\win8.css \
 E:\PhoneGap\localNotify\platforms\android\assets\www\img\1.jpg \
 E:\PhoneGap\localNotify\platforms\android\assets\www\img\2.jpg \
-E:\PhoneGap\localNotify\platforms\android\assets\www\img\27.jpg \
 E:\PhoneGap\localNotify\platforms\android\assets\www\img\3.jpg \
 E:\PhoneGap\localNotify\platforms\android\assets\www\img\4.jpg \
 E:\PhoneGap\localNotify\platforms\android\assets\www\img\5.jpg \
-E:\PhoneGap\localNotify\platforms\android\assets\www\img\6.jpg \
 E:\PhoneGap\localNotify\platforms\android\assets\www\img\beacon_gray.png \
 E:\PhoneGap\localNotify\platforms\android\assets\www\img\demo.jpg \
 E:\PhoneGap\localNotify\platforms\android\assets\www\img\logo.png \

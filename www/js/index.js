@@ -52,7 +52,9 @@ function onDeviceReady(){
 						if (notiFlag5){
 							notify5();
 						}
-					}else if(beacons[i].minor == '6'){
+					}
+					/*
+					else if(beacons[i].minor == '6'){
 						beacon_6 = beacons[i].accuracy;
 						if (notiFlag6){
 							notify6();
@@ -63,6 +65,7 @@ function onDeviceReady(){
 							notify27();
 						}
 					}
+					*/
 				}
 				
 			});
@@ -143,6 +146,7 @@ function sleep(n){
 
 
 /****以下是测试用****/
+/*
 function notify1(){
 	if (beacon_1 > 0){
 		$.ajax({
@@ -160,11 +164,11 @@ function notify1(){
 			},
 			error: function(){
 				notiFlag1 = false;
-				/*
+				
 				window.EstimoteBeacons.notify("一号基站消息", '一折促销', "com.showingcloud.mynotification.MyNotificationMinor1", 'minor1', 1, function(){
 					
 				});
-				*/
+				
 			}
 		});
 	}
@@ -185,11 +189,11 @@ function loopNotify1(){
 				},
 				error: function(){
 					notiFlag1 = false;
-					/*
+					
 					window.EstimoteBeacons.notify("一号基站消息", '一折促销', "com.showingcloud.mynotification.MyNotificationMinor1", 'minor1', 1, function(){
 						
 					});
-					*/
+					
 				}
 			});
 		}
@@ -212,11 +216,11 @@ function notify2(){
 			},
 			error: function(){
 				notiFlag2 = false;
-				/*
+				
 				window.EstimoteBeacons.notify("一号基站消息", '一折促销', "com.showingcloud.mynotification.MyNotificationMinor2", 'minor2', 2, function(){
 					
 				});
-				*/
+				
 			}
 		});
 	}
@@ -238,11 +242,11 @@ function loopNotify2(){
 				},
 				error: function(){
 					notiFlag2 = false;
-					/*
+					
 					window.EstimoteBeacons.notify("二号基站消息", '二折促销', "com.showingcloud.mynotification.MyNotificationMinor2", 'minor2', 2, function(){
 						
 					});
-					*/
+					
 				}
 			});
 		}
@@ -265,11 +269,11 @@ function notify3(){
 			},
 			error: function(){
 				notiFlag3 = false;
-				/*
+				
 				window.EstimoteBeacons.notify("一号基站消息", '一折促销', "com.showingcloud.mynotification.MyNotificationMinor3", 'minor3', 3, function(){
 					
 				});
-				*/
+				
 			}
 		});
 	}
@@ -291,11 +295,11 @@ function loopNotify3(){
 				},
 				error: function(){
 					notiFlag3 = false;
-					/*
+					
 					window.EstimoteBeacons.notify("一号基站消息", '一折促销', "com.showingcloud.mynotification.MyNotificationMinor3", 'minor3', 3, function(){
 						
 					});
-					*/
+					
 				}
 			});
 		}
@@ -318,11 +322,11 @@ function notify4(){
 			},
 			error: function(){
 				notiFlag4 = false;
-				/*
+				
 				window.EstimoteBeacons.notify("一号基站消息", '一折促销', "com.showingcloud.mynotification.MyNotificationMinor4", 'minor4', 4, function(){
 					
 				});
-				*/
+				
 			}
 		});
 	}
@@ -343,11 +347,11 @@ function loopNotify4(){
 				},
 				error: function(){
 					notiFlag4 = false;
-					/*
+					
 					window.EstimoteBeacons.notify("一号基站消息", '一折促销', "com.showingcloud.mynotification.MyNotificationMinor4", 'minor4', 4, function(){
 						
 					});
-					*/
+					
 				}
 			});
 		}
@@ -370,11 +374,11 @@ function notify5(){
 			},
 			error: function(){
 				notiFlag5 = false;
-				/*
+				
 				window.EstimoteBeacons.notify("一号基站消息", '一折促销', "com.showingcloud.mynotification.MyNotificationMinor5", 'minor5', 5, function(){
 					
 				});
-				*/
+				
 			}
 		});
 	}
@@ -396,11 +400,11 @@ setInterval (function(){
 				},
 				error: function(){
 					notiFlag5 = false;
-					/*
+					
 					window.EstimoteBeacons.notify("一号基站消息", '一折促销', "com.showingcloud.mynotification.MyNotificationMinor5", 'minor5', 5, function(){
 						
 					});
-					*/
+					
 				}
 			});
 		}
@@ -423,11 +427,11 @@ function notify6(){
 			},
 			error: function(){
 				notiFlag6 = false;
-				/*
+				
 				window.EstimoteBeacons.notify("一号基站消息", '一折促销', "com.showingcloud.mynotification.MyNotificationMinor6", 'minor6', 6, function(){
 					
 				});
-				*/
+				
 			}
 		});
 	}
@@ -449,11 +453,11 @@ function loopNotify6(){
 				},
 				error: function(){
 					notiFlag6 = false;
-					/*
+					
 					window.EstimoteBeacons.notify("一号基站消息", '一折促销', "com.showingcloud.mynotification.MyNotificationMinor6", 'minor6', 6, function(){
 						
 					});
-					*/
+					
 				}
 			});
 		}
@@ -478,11 +482,11 @@ function notify27(){
 			},
 			error: function(){
 				notiFlag27 = false;
-				/*
+				
 				window.EstimoteBeacons.notify("一号基站消息", '一折促销', "com.showingcloud.mynotification.MyNotificationMinor27", 'minor27', 27, function(){
 					
 				});
-				*/
+				
 			}
 		});
 	}
@@ -504,14 +508,106 @@ function loopNotify27(){
 				},
 				error: function(){
 					notiFlag27 = false;
-					/*
+					
 					window.EstimoteBeacons.notify("一号基站消息", '一折促销', "com.showingcloud.mynotification.MyNotificationMinor27", 'minor27', 27, function(){
 						
 					});
-					*/
+					
 				}
 			});
 		}
 	}, 1000*120);
 }
+*/
 
+/****以下是测试用****/
+function notify1(){
+	if (beacon_1 > 0){
+		notiFlag1 = false;
+		window.EstimoteBeacons.notify("友谊商城欢迎您", '友谊股份年中庆，劲爆5折起', "com.showingcloud.mynotification.MyNotificationMinor1", 'minor1', 1, function(){
+			notiFlag1 = false;
+			//loopNotify1();
+		});
+	}
+}
+function loopNotify1(){
+	setInterval (function(){
+		if (beacon_1 > 0){
+			window.EstimoteBeacons.notify("友谊商城欢迎您", '友谊股份年中庆，劲爆5折起', "com.showingcloud.mynotification.MyNotificationMinor1", 'minor1', 1, function(){
+				
+			});
+		}
+	}, 1000*120);
+}
+function notify2(){
+	if (beacon_2 <= 1 && beacon_2 > 0){
+		notiFlag2 = false;
+		window.EstimoteBeacons.notify("二楼优惠推荐", 'Munsingwear新店开张，特价优惠活动', "com.showingcloud.mynotification.MyNotificationMinor2",'minor2', 2, function(){
+			notiFlag2 = false;
+			loopNotify2();
+		});
+	}
+}
+function loopNotify2(){
+	setInterval (function(){
+		if (beacon_2 <= 1 && beacon_2 > 0){
+			window.EstimoteBeacons.notify("二楼优惠推荐", 'Munsingwear新店开张，特价优惠活动', "com.showingcloud.mynotification.MyNotificationMinor2",'minor2', 2, function(){
+				
+			});
+		}
+	}, 1000*120);
+}
+function notify3(){
+	if (beacon_3 <= 1 && beacon_3 > 0){
+		notiFlag3 = false;
+		window.EstimoteBeacons.notify("五楼优惠推荐", 'Zippo限时优惠！购买任一款打火机送机油一瓶', "com.showingcloud.mynotification.MyNotificationMinor3", 'minor3', 3, function(){
+			notiFlag3= false;
+			loopNotify3();
+		});
+	}
+}
+function loopNotify3(){
+	setInterval (function(){
+		if (beacon_3 <= 1 && beacon_3 > 0){
+			window.EstimoteBeacons.notify("五楼优惠推荐", 'Zippo限时优惠！购买任一款打火机送机油一瓶', "com.showingcloud.mynotification.MyNotificationMinor3", 'minor3', 3, function(){
+				
+			});
+		}
+	}, 1000*120);
+}
+function notify4(){
+	if (beacon_4 <= 0.3 && beacon_4 > 0){
+		notiFlag4 = false;
+		window.EstimoteBeacons.notify("Zippo新品", '独立设计师最新设计产品，特价优惠！', "com.showingcloud.mynotification.MyNotificationMinor4", 'minor4', 4, function(){
+			notiFlag4= false;
+			loopNotify4();
+		});
+	}
+}
+function loopNotify4(){
+	setInterval (function(){
+		if (beacon_4 <= 0.3 && beacon_4 > 0){
+			window.EstimoteBeacons.notify("Zippo新品", '独立设计师最新设计产品，特价优惠！', "com.showingcloud.mynotification.MyNotificationMinor4", 'minor4', 4, function(){
+				
+			});
+		}
+	}, 1000*120);
+}
+function notify5(){
+	if (beacon_5 <= 0.1 && beacon_5 > 0){
+		notiFlag5 = false;
+		window.EstimoteBeacons.notify("南方友谊商城欢迎您", '到西贝，吃《舌尖2》张爷爷手工空心挂面', "com.showingcloud.mynotification.MyNotificationMinor5", 'minor5', 5, function(){
+			notiFlag5= false;
+			loopNotify5();
+		});
+	}
+}
+function loopNotify5(){
+	setInterval (function(){
+		if (beacon_5 <= 0.1 && beacon_5 > 0){
+			window.EstimoteBeacons.notify("南方友谊商城欢迎您", '到西贝，吃《舌尖2》张爷爷手工空心挂面', "com.showingcloud.mynotification.MyNotificationMinor5", 'minor5', 5, function(){
+				
+			});
+		}
+	}, 1000*120);
+}

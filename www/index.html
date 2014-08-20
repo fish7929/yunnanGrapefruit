@@ -29,6 +29,7 @@
 		<link rel="stylesheet" type="text/css" href="plugins/css/af.popup.css"  />
 		<link rel="stylesheet" type="text/css" href="plugins/css/af.scroller.css"  />
 		<link rel="stylesheet" type="text/css" href="plugins/css/af.selectBox.css"  /> 
+		<link rel="stylesheet" type="text/css" href="css/index.css"  /> 
 		
 		
 		
@@ -133,6 +134,9 @@
 			.carousel_content {
 				-webkit-transform: translate3d(0, 0, 0);
 			}
+			#afui .panel {
+				padding: 0px;
+			}
 		</style>
 		<!--幻灯style end-->
 		<!--基本要导入的JS-->
@@ -165,7 +169,11 @@
                 var tag = $("head").append(script);
             }
 			$.ui.ready(function(){ 
-				$("#afui").get(0).className='ios7'; //设置属于那种风格 
+				if ($.os.android){
+					$("#afui").get(0).className='android'; //设置属于那种风格 
+				}else{
+					$("#afui").get(0).className='ios7'; //设置属于那种风格 
+				}
 			});
         </script>
 		<!--自己的JS-->
@@ -178,65 +186,61 @@
     <body>
         <div id="afui" class="ios7">
 			<div id="content">
-				<div id="main" class="panel" selected="true" data-footer="custom_footer" data-header="custom_header" data-nav="menu_beacons" data-tab="navbar_home">
-					<center >
-						<img border="0" width="268" src="img/orangestar.png" title="Orange star" align="center" />
-					</center>
-					<h2 class='expanded' onclick='showHide(this,"main_info");'>功能简介</h2>
-                    <p id='main_info'>
-						1、基于蓝牙的本地推送
-						<br />
-						2、进出区域的本地推送
-						<br />
-						3、信息产品的本地推送
-						<br />
-						4、折扣信息的本地推送
-						<br />
-						5、以上功能目前只是正对Android
-					</p>
+				<div id="main" class="panel" selected="true" data-nav="menu_beacons" data-footer='none' data-header='none'>
+					<img border="0"  src="img/main.jpg" title="Orange star" align="center" />
 				</div>
-			<header id="custom_header">
-				<h1 style="color: #0088D1;">蓝牙系统</h1>
-				<a id="backButton" class="button" style="visibility: hidden;">返回</a>
-				<a id="menubadge" onclick="af.ui.toggleSideMenu()" class="menuButton" style="float: left;"></a>
-			</header>
-			<footer id="custom_footer">
-				<a href="#main" id='navbar_home' class='icon home' >主页<span class='af-badge lr'>6</span></a>
-                <a href="#main" id='navbar_fun' class="icon stack" >功能</a>
-                <a href="#main" id='navbar_res' class="icon picture" >资源</a>
-                <a href="#main" id='navbar_info' class="icon info">信息</a>
-			</footer>
-			
-			<nav id="menu_beacons">
-                <ul class="list" id="navList">
-                    <li class="divider">附近蓝牙基站信息</li>
-                    <li>
-                        <a href="#">
-							<img src="./img/beacon_gray.png" class="myFloat" />
-							<div class="myFloat">
-								<p>Minor: 5434fsdf</p>
-								<p>Accuracy: 135cm</p>
-							</div>
-						</a>
-                    </li>
-                </ul>
-            </nav>
-			<!-- 右边栏显示
-			<aside>
-                <ul class="list">
-                     <li class="divider">Beacons</li>
-                    <li>
-                        <a href="#">beacons1</a>
-                    </li>
-                    <li>
-                        <a href="#">beacons2</a>
-                    </li>
-                    <li>
-                        <a href="#">beacons3</a>
-                    </li>
-                </ul>
-            </aside>
-			-->
+				
+				<div id="notification" class="panel"  data-footer='none' data-load="showImage" data-header='myHeader'>
+					<script>
+						function showImage(){
+							var imgUrl = getData("imgUrl");
+							$('#showMinor').prop("src", imgUrl) ;
+						}
+					</script>
+					<div class="showDiv">
+						<img src="./img/demo.jpg" id="showMinor" />
+						<p id="coupon"></p>
+						<div class="showDate">
+							<p id="activeDate"></p>
+						</div>
+					</div>
+					
+				</div>
+				<header id="myHeader">
+					<a id="backButton" onclick="$.ui.goBack()" class='button'>返回</a>
+					<h1>内容</h1>
+				</header>
+				<nav id="menu_beacons">
+					<ul class="list" id="navList">
+						<li class="divider">附近蓝牙基站信息</li>
+						<li>
+							<a href="#">
+								<img src="./img/beacon_gray.png" class="myFloat" />
+								<div class="myFloat">
+									<p>Minor: 5434fsdf</p>
+									<p>Accuracy: 135cm</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- 右边栏显示
+				<aside>
+					<ul class="list">
+						 <li class="divider">Beacons</li>
+						<li>
+							<a href="#">beacons1</a>
+						</li>
+						<li>
+							<a href="#">beacons2</a>
+						</li>
+						<li>
+							<a href="#">beacons3</a>
+						</li>
+					</ul>
+				</aside>
+				-->
+			</div>
 		</div>
     </body>
 </html>

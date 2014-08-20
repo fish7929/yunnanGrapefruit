@@ -8,8 +8,8 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <!--
 		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        -->
-		<!--基本要导入的样式-->
+		-->
+	   <!--基本要导入的样式-->
 		<link rel="stylesheet" type="text/css" href="css/icons.css" />
         <link rel="stylesheet" type="text/css" href="css/main.css" />
         <link rel="stylesheet" type="text/css" href="css/appframework.css" />
@@ -75,6 +75,31 @@
 				$.ui.toggleNavMenu();	//取消footer
 				$.ui.toggleHeaderMenu();	//取消header
 			});
+			$(document).ready(function(){
+			//function getData(){
+				$.ajax ({
+					url: "http://yujin.scs.im/send_queues.json?beacon_id=1",
+					type: "GET",
+					dataType: "json",
+					error: function(){
+						$('#showMinor1').prop("src", "welcome0.png") ;
+						//$("#afui").popup("网络连接失败！");
+					},
+					success: function(res){
+						for(var i = 0; i < res.length; i++){
+							var url = "http://" + res[i].image_url
+							$('#showMinor1').prop("src", url);
+							if(res[i].coupon != null){
+								$('#coupon').text(res[i].coupon+"");
+							}
+							if (res[i].start_date != null){
+								$('#activeDate').text("活动日期："+res[i].start_date+" － "+res[i].end_date);
+							}
+						}
+					}
+				});
+			//}
+			});
         </script>
 		<!--自己的JS,af.carousel.min.js为幻灯片的-->
         <script type="text/javascript" src="cordova.js"></script>
@@ -83,9 +108,9 @@
 	<body>
         <div id="afui" class="ios7">
 			<div id="content">
-				<div id="notification" class="panel" selected="true"  >
+				<div id="notification" class="panel" selected="true" >
 					<div class="showDiv">
-						<img src="./img/welcome0.png" />
+						<img src="" id="showMinor1" />
 						<p id="coupon"></p>
 						<div class="showDate">
 							<p id="activeDate"></p>

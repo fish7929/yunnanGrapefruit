@@ -113,7 +113,7 @@ public class EstimoteBeacons extends CordovaPlugin {
 				//requestServer();
 				
 				try {
-					postNotification("Entry", "Entry Minor 1  Room!", "com.showingcloud.mynotification.MyNotification", "entry", 111);
+					postNotification("Welcome", "Welcome here!", "com.showingcloud.mynotification.MyNotification", "entry", 111);
 				} catch (ClassNotFoundException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -124,12 +124,14 @@ public class EstimoteBeacons extends CordovaPlugin {
           @Override
           public void onExitedRegion(Region region) {
         	  Log.i("debug5....","Exited region");
+			  /*
 			try {
-				postNotification("Exit", "Exited Minor 1 region!", "com.showingcloud.mynotification.MyNotification", "exit", 111);
+				postNotification("Exit", "Exited!", "com.showingcloud.mynotification.MyNotification", "exit", 111);
 			} catch (ClassNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+			*/
 		}
         });
 		

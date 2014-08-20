@@ -17,10 +17,6 @@ public class MyNotification extends DroidGap {
 			super.loadUrl("file:///android_asset/www/entry.html");
 		}else if(("exit").equalsIgnoreCase(status)){
 			super.loadUrl("file:///android_asset/www/exit.html");
-		}else if(("nike").equalsIgnoreCase(status)){
-			super.loadUrl("file:///android_asset/www/nike.html");
-		}else if(("adidas").equalsIgnoreCase(status)){
-			super.loadUrl("file:///android_asset/www/adidas.html");
 		}
 		
 		//super.loadUrl("file:///android_asset/www/in.html");

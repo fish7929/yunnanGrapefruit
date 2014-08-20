@@ -466,7 +466,8 @@
     }
     
     if(beacon != nil) {
-        [props setValue:beacon.distance forKey:@"distance"];
+//        [props setValue:beacon.distance forKey:@"distance"];
+        [props setValue:beacon.distance forKey:@"accuracy"];
         [props setValue:[NSNumber numberWithInt:beacon.proximity] forKey:@"proximity"];
         
         if(beacon.proximityUUID != nil) {

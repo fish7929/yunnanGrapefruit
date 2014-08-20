@@ -1,4 +1,4 @@
-﻿﻿var notiFlag1 = true;
+﻿var notiFlag1 = true;
 var notiFlag2 = true;
 var notiFlag3 = true;
 var notiFlag4 = true;
